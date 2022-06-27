@@ -183,7 +183,7 @@ header hr {
 }
 
 .menu__mobile .close__text {
-    padding-top: 1px;
+    padding-top: 3px;
 }
 
 .close-mobile:hover .close__text-mobile {
@@ -2126,6 +2126,7 @@ textarea::placeholder {
     .item.slick-slide {
         width: 68vw !important;
         height: 280px !important;
+        max-height: 64vh;
     }
 
     .arrow-prev {
@@ -2160,8 +2161,8 @@ textarea::placeholder {
     }
 
     .about_us-column {
-        max-width: none;
-        flex-basis: none;
+        max-width: unset;
+        flex-basis: unset;
     }
 
     .left_padding {
