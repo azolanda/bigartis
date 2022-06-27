@@ -1433,11 +1433,19 @@ textarea::placeholder {
     .ornament {
         top: 470px;
     }
+
+    .projects {
+        padding-bottom: 48px;
+    }
 }
 
 @media(min-width:1600px) {
     .container {
         padding: 0 12vw;
+    }
+
+    .projects {
+        padding-bottom: 48px;
     }
 
     .preview {
@@ -3182,12 +3190,7 @@ textarea::placeholder {
 
 @media(max-width:360px){
     .eng-rus {
-        padding: 7px 2px;
         margin-right: 2px;
-    }
-
-    .mess-icon {
-        padding: 3px 4px 4px;
     }
 
     .mess-item {
@@ -3348,6 +3351,14 @@ textarea::placeholder {
 }
 
 @media(max-width:300px){
+    .eng-rus {
+        padding: 7px 2px;
+    }
+
+    .mess-icon {
+        padding: 3px 4px 4px;
+    }
+
     .logo {
         padding-bottom:20px;
     }
