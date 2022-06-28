@@ -514,7 +514,9 @@ header hr {
 }
 
 .wrap {
-    position: relative;
+    /* position: relative; */
+    position: absolute;
+    top: -30vh;
     z-index: 100;
     max-width: 100%;
     overflow: hidden;
@@ -2918,7 +2920,7 @@ textarea::placeholder {
     
     .contact__form__message-mobile{
         position: fixed;
-        z-index: 100;
+        z-index: 102;
         height: 100%;
         display: flex;
         align-items: center;
@@ -3477,6 +3479,13 @@ textarea::placeholder {
 
     .structural__menu {
         top: -410px;
+    }
+}
+
+@media (max-height: 640px){
+    .wrap {
+        position: relative;
+        top: unset;
     }
 }
 
