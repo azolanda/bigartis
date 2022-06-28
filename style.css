@@ -514,9 +514,7 @@ header hr {
 }
 
 .wrap {
-    /* position: relative; */
-    position: absolute;
-    top: -30vh;
+    position: relative;
     z-index: 100;
     max-width: 100%;
     overflow: hidden;
@@ -3479,13 +3477,6 @@ textarea::placeholder {
 
     .structural__menu {
         top: -410px;
-    }
-}
-
-@media (max-height: 640px){
-    .wrap {
-        position: relative;
-        top: unset;
     }
 }
 
