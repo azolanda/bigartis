@@ -55,10 +55,6 @@
     font-style: normal;
 }
 
-html{
-    overflow-x: hidden;
-}
-
 body {
     height: 100%;
     font-size: 16px;
@@ -2273,6 +2269,10 @@ textarea::placeholder {
 }
 
 @media(max-width:768px) {
+    html{
+        overflow-x: hidden;
+    }
+
     header .mess {
         margin-right: calc(8vw + 46px);
     }
