@@ -1717,7 +1717,7 @@ textarea::placeholder {
 
 @media(max-width:1366px) {
     .preview__img {
-        width: 19vw;
+        width: 18.82vw;
     }
 }
 
@@ -2364,7 +2364,7 @@ textarea::placeholder {
         width: 46px;
         border: none;
         position: fixed;
-        right: 8vw;
+        right: calc(8vw - 8px);
         top: 26px;
         background-color: #fcfcfc;
         padding: 8px;
@@ -2378,6 +2378,9 @@ textarea::placeholder {
     .menu__icon-mobile:hover {
         cursor: pointer;
         background: url(img/mobile/burger_active.png);
+        background-color: #fcfcfc;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .menu__mobile {
@@ -2931,7 +2934,7 @@ textarea::placeholder {
     }
 
     .menu__icon-mobile {
-        right: 4vw;
+        right: calc(4vw - 6px);
         top: 26px;  
         padding: 6px;
     }
@@ -3404,6 +3407,7 @@ textarea::placeholder {
     .menu__icon-mobile {
         top: 28px;
         padding: 4px 3px;
+        right: calc(4vw - 3px);
     }
 
     .logo {
