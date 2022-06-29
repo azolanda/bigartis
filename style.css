@@ -98,6 +98,10 @@ header hr {
     z-index: 1;
 }
 
+.extra__padding{
+    padding-top: 64px;
+} 
+
 .menu {
     font-family: 'MyriadPro-Regular';
     font-size: 1em;
@@ -115,6 +119,8 @@ header hr {
     align-items: center;
     margin: 0 auto;
     width: 25px;
+    /* --- */
+    height: 43px;
 }
 
 .menu__list:hover {
@@ -141,9 +147,11 @@ header hr {
     content: '';
     width: 18px;
     height: 18px;
-    position: absolute;
+    /* position: absolute;
+    right: 2px; */
     top: 2px;
-    right: 2px;
+    position: relative;
+    right: -2px;
     background: #4a446a;
     border-radius: 50%;
     display: none;
@@ -152,8 +160,10 @@ header hr {
 .menu__list:hover .menu__img {
     width: 22px;
     height: 22px;
-    position: absolute;
-    top: 8px;
+    /* position: absolute;
+    top: 8px; */
+    position: relative;
+    top: -36px;
     border-radius: 50%;
     background: #f4f3f6;
     border: 3px solid #4a446a;
@@ -164,8 +174,15 @@ header hr {
 }
 
 .menu__text {
-    position: absolute;
-    top: 40px;
+    /* position: absolute;
+    top: 40px; */
+    position: relative;
+    top: -28px;
+}
+
+.menu__list:hover .menu__text{
+    /* top: -5px; */
+    top: -33px;
 }
 
 .menu__icon-mobile {
@@ -221,9 +238,9 @@ header hr {
 .logo {
     display: flex;
     justify-content: center;
-    padding: 100px 0 65px;
-
-}
+    /* padding: 100px 0 65px; */
+    padding: 80px 0 65px;
+}   
 
 .header__description {
     padding-bottom: 170px;
@@ -1151,7 +1168,9 @@ textarea::placeholder {
 }
 
 .form__message {
-    padding: 118px 0 86px;
+    /* --- */
+    /* padding: 118px 0 86px; */
+    padding: 124px 0 86px;
     display: flex;
     justify-content: center;
 }
@@ -1164,13 +1183,19 @@ textarea::placeholder {
     width: 714px;
 }
 
+.contacts{
+    padding-bottom: 64px;
+}
+
 .contacts_ornament {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
     position: absolute;
-    bottom: -64px;
+    /* --- */
+    /* bottom: -64px; */
+    bottom: 0px;
 }
 
 .contacts_ornament-left {
@@ -1257,7 +1282,8 @@ textarea::placeholder {
 /* ------- FOOTER ------- */
 .footer {
     background-color: #4b446a;
-    top: 64px;
+    /* --- */
+    /* top: 64px; */
     flex: 0 0 auto;
 }
 
@@ -1500,7 +1526,8 @@ textarea::placeholder {
     }
 
     .logo {
-        padding: 140px 0 65px;
+        /* padding: 140px 0 65px; */
+        padding: 120px 0 65px;
     }
 
     .header__description {
@@ -1595,14 +1622,22 @@ textarea::placeholder {
         min-width: auto;
     }
 
-    .contacts__items,
+    .contacts__items{
+        /* --- */
+        /* max-width: 1480px; */
+        max-width: 1290px;
+    }
+
     .footer__width {
-        max-width: 1480px;
+        max-width: 1292px;
     }
 
     .contacts__form {
-        width: 1200px;
-        left: calc((100vw - 1200px - 18px) / 2);
+        /* --- */
+        /* width: 1200px; */
+        width: 1300px;
+        /* left: calc((100vw - 1200px - 18px) / 2); */
+        left: calc((100vw - 1300px - 10px) / 2);
         padding: 0 6vw 38px;
     }
 
@@ -1633,7 +1668,9 @@ textarea::placeholder {
     }
 
     .menu__list:hover .menu__img {
-        top: 28px;
+        /* --- */
+        /* top: 28px; */
+        top: -18px;
     }
 
     .menu__img {
@@ -1641,11 +1678,18 @@ textarea::placeholder {
     }
 
     .menu__text {
-        top: 60px;
+        /* --- */
+        /* top: 60px; */
+        top: 0px;
+    }
+
+    .menu__list:hover .menu__text {
+        top: -5px;
     }
 
     .logo {
-        padding: 240px 0 65px;
+        /* padding: 240px 0 65px; */
+        padding: 220px 0 65px;
     }
 
     .header__description {
@@ -1702,9 +1746,8 @@ textarea::placeholder {
         padding: 0 1.2vw 10px;
     }
 
-    .contacts__items,
     .footer__width {
-        max-width: 1580px;
+        max-width: 1380px;
     }
 
     .footer__top {
@@ -1965,7 +2008,8 @@ textarea::placeholder {
     }
 
     .logo {
-        padding-top: 85px;
+        /* padding-top: 85px; */
+        padding-top: 65px;
     }
 
     .heading {
@@ -2055,7 +2099,8 @@ textarea::placeholder {
 
 @media(max-width:854px) {
     .logo {
-        padding: 65px 0 45px;
+        /* padding: 65px 0 45px; */
+        padding: 45px 0;
     }
 
     .header__description {
@@ -2403,7 +2448,8 @@ textarea::placeholder {
     }
 
     .logo {
-        padding-top: 105px;
+        /* padding-top: 105px; */
+        padding-top: 85px;
     }
 
     .services__container {

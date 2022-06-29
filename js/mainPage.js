@@ -165,11 +165,11 @@ $(document).ready(function () {
         menuCheckbox.checked = false;
     }
 
-    function closeMenuMobileServices() {
-        let menuMobile = document.getElementById("menu_site");
-        menuMobile.style.right = '-100vw';
-        menuCheckbox.checked = false;
-    }
+    // function closeMenuMobileOnChoice() {
+    //     closeMenuMobile();
+    //     $('#header__site').addClass('extra__padding');
+    //     $('#top__ornament').addClass('extra__padding');
+    // }
 
     function closeForm() {
         let form = $('#contact__form');
@@ -206,6 +206,9 @@ $(document).ready(function () {
         e.preventDefault();
         });
 
+    const ref = window.location.pathname;
+        
     window.addEventListener("unload", function(){
         menuCheckbox.checked = false;
+        window.location.replace(ref);
     });
