@@ -94,8 +94,12 @@ header hr {
     background-color: #4a446a;
     position: relative;
     top: 20px;
-    height: 3px;
+    /* --- */
+    /* height: 3px; */
+    height: 4px;
     z-index: 1;
+    /* --- */
+    border: 0;
 }
 
 .extra__padding{
@@ -118,8 +122,9 @@ header hr {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    width: 25px;
     /* --- */
+    /* width: 25px; */
+    width: 85px;
     height: 43px;
 }
 
@@ -504,6 +509,10 @@ header hr {
     cursor: pointer;
 }
 
+.preview__item:hover {
+    opacity: 0.7;
+}
+
 .preview__heading {
     font-family: 'Calibri-Regular';
     font-size: 0.9em;
@@ -849,6 +858,9 @@ header hr {
 .structural__menu-text {
     padding-top: 30px;
     line-height: 25px;
+    /* --- */
+    display: flex;
+    flex-direction: column;
 }
 
 /* ----- CLIENTS ----- */
@@ -1899,6 +1911,10 @@ textarea::placeholder {
 }
 
 @media(max-width:1040px) {
+    .menu {
+        width: 50vw;
+    }
+
     .ornament {
         top: 476px;
     }
@@ -2003,7 +2019,8 @@ textarea::placeholder {
 @media(max-width:930px) {
 
     .menu {
-        width: 47vw;
+        /* --- */
+        /* width: 47vw; */
         font-size: 0.95em;
     }
 
@@ -2098,9 +2115,133 @@ textarea::placeholder {
 }
 
 @media(max-width:854px) {
+    header .mess {
+        margin-right: calc(8vw + 46px);
+    }
+
+    .menu {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: #4b446a;
+        /* position: absolute; */
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        z-index: 102;
+    }
+
+    .menu__list {
+        color: #fff;
+        z-index: 2;
+        height: 9vh;
+        font-size: 2em;
+        width: fit-content;
+    }
+
+    .menu__text {
+        position: unset;
+        padding-top: 2vh;
+    }
+
+    .menu__img-wrap {
+        height: 20px;
+    }
+
+    .menu__img {
+        border: 2px double #edecf1;
+        top: 0;
+        outline: 2px solid #fff;
+        outline-offset: 3px;
+    }
+
+    .menu__list:hover .menu__img::before {
+        display: none;
+    }
+
+    .menu__list:hover .menu__img {
+        position: relative;
+        background: #4b446a;
+        border: 3px solid #edecf1;
+        width: 22px;
+        height: 22px;
+        top: -6px;
+        outline: none;
+    }
+
+    .menu__check:checked ~ .menu{
+        right: 0 !important;
+        transition: right 1s;
+    }
+
+    .mess-menu_mobile {
+        display: flex;
+    }
+
+    .menu__mobile-bottom {
+        display: block;
+        width: 100vw;
+    }
+
+    .menu__mobile-bottom .footer__social-mobile {
+        padding: 2.5vh 5vw;
+    }
+
+    .menu__mobile-bottom .mess {
+        margin-right: 0;
+    }
+
+    .menu__mobile-bottom hr {
+        color: #fff;
+        height: 1px;
+        background-color: #fff;
+        position: unset;
+    }
+
+    .menu__icon-mobile {
+        display: block;
+        background: url(img/mobile/burger_no-active.png);
+        height: 24px;
+        width: 46px;
+        border: none;
+        position: fixed;
+        right: calc(8vw - 8px);
+        top: 26px;
+        background-color: #fcfcfc;
+        padding: 8px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        opacity: 0.7;
+        z-index: 101;
+    }
+
+    .menu__icon-mobile:hover {
+        cursor: pointer;
+        background: url(img/mobile/burger_active.png);
+        background-color: #fcfcfc;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .menu__mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__top .heading {
+        padding-bottom: 6px;
+
+    } 
+
     .logo {
         /* padding: 65px 0 45px; */
-        padding: 45px 0;
+        /* --- */
+        /* padding: 45px 0; */
+        padding-top: 105px;
     }
 
     .header__description {
@@ -2319,7 +2460,7 @@ textarea::placeholder {
 }
 
 @media(max-width:768px) {
-    header .mess {
+    /* header .mess {
         margin-right: calc(8vw + 46px);
     }
 
@@ -2331,7 +2472,7 @@ textarea::placeholder {
         justify-content: space-between;
         background: #4b446a;
         /* position: absolute; */
-        position: fixed;
+        /*position: fixed;
         top: 0;
         right: -100vw;
         z-index: 102;
@@ -2342,6 +2483,7 @@ textarea::placeholder {
         z-index: 2;
         height: 9vh;
         font-size: 2em;
+        width: fit-content;
     }
 
     .menu__text {
@@ -2438,7 +2580,7 @@ textarea::placeholder {
     .header__top .heading {
         padding-bottom: 6px;
 
-    } 
+    }  */
 
     .header__text {
         padding: 0;
