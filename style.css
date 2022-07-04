@@ -1052,8 +1052,10 @@ textarea::placeholder {
     /* background: #f8f7fa url(img/error.svg) no-repeat 98% center; */
     background-size: 20px;
     box-shadow: 0 0 3px #473787;
+    -webkit-box-shadow: 0 0 3px #473787;
     border-color: #473787;
     transition: box-shadow 0.2s;
+    -webkit-transition: box-shadow 0.2s;
 }
 
 .contacts__form input:required:valid,
@@ -1061,6 +1063,7 @@ textarea::placeholder {
     background: #fff url(img/valid.svg) no-repeat 98% center;
     background-size: 12px;
     box-shadow: 0 0 1px #9894aa;
+    -webkit-box-shadow: 0 0 1px #9894aa;
 }
 
 .form__bottom {
@@ -1072,10 +1075,12 @@ textarea::placeholder {
 
 .form__item ._error {
     box-shadow: 0 0 3px rgba(244, 106, 106, 0.839);
+    -webkit-box-shadow: 0 0 3px rgba(244, 106, 106, 0.839);
 }
 
 ._error+label:before {
     box-shadow: 0 0 3px rgba(244, 106, 106, 0.839);
+    -webkit-box-shadow: 0 0 3px rgba(244, 106, 106, 0.839);
 }
 
 .form__bottom-plus__button {
@@ -1146,6 +1151,7 @@ textarea::placeholder {
     background-image: url("img/checked.svg");
     background-size: 70%;
     box-shadow: 0 0 0 0;
+    -webkit-box-shadow: 0 0 0 0;
 }
 
 .personal_data {
@@ -2172,10 +2178,17 @@ textarea::placeholder {
     }
 
     .menu__img {
-        border: 2px double #edecf1;
+        /* --- */
+        /* border: 2px double #edecf1; */
         top: 0;
-        outline: 2px solid #fff;
-        outline-offset: 3px;
+        /* --- */
+        /* outline: 2px solid #fff;
+        outline-offset: 3px; */
+        border: 3px solid #4b446a;
+        width: 11px;
+        height: 11px;
+        box-shadow: 0 0 0 2px #edecf1;
+        -webkit-box-shadow: 0 0 0 2px #edecf1;
     }
 
     .menu__list:hover .menu__img::before {
@@ -2189,7 +2202,10 @@ textarea::placeholder {
         width: 22px;
         height: 22px;
         top: -6px;
-        outline: none;
+        /* --- */
+        /* outline: none; */
+        box-shadow: none;
+        -webkit-box-shadow: none;
     }
 
     .menu__check:checked ~ .menu{
@@ -2771,8 +2787,11 @@ textarea::placeholder {
     }
 
     .menu__img {
-        width: 7px;
-        height: 7px;
+        /* --- */
+        /* width: 7px;
+        height: 7px; */
+        width: 9px;
+        height: 9px;
     }
 
     .menu__list:hover .menu__img {
@@ -2810,6 +2829,10 @@ textarea::placeholder {
     .menu__list:hover {
         position: relative;
         left: -7px;
+    }
+
+    .menu__list:hover .menu__img {
+        left: 2px;
     }
 
     .menu__text {
