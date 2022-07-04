@@ -87,6 +87,9 @@ header {
 
 .header__top{
     background: linear-gradient(to bottom, #f3f2f5, #ffffff);
+    position: fixed;
+    width: 100vw;
+    z-index: 101;
 }
 
 header hr {
@@ -111,8 +114,7 @@ header hr {
     font-size: 1em;
     display: flex;
     width: 45vw;
-    margin: 0 auto;
-
+    margin: 0 auto -20px;
 }
 
 .menu__list {
@@ -244,7 +246,8 @@ header hr {
     display: flex;
     justify-content: center;
     /* padding: 100px 0 65px; */
-    padding: 80px 0 65px;
+    /* padding: 80px 0 65px; */
+    padding: 150px 0 65px;
 }   
 
 .header__description {
@@ -312,7 +315,7 @@ header hr {
     color: #9894aa;
     text-align: center;
     font-size: 0.9em;
-    text-decoration: none;
+    /* text-decoration: none; */
     border-top: none;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
@@ -320,7 +323,10 @@ header hr {
     padding: 7px 15px;
     margin-right: 14px;
     position: relative;
-    top: -3px;
+    /* --- */
+    /* top: -3px; */
+    top: -12px;
+    background: transparent;
 }
 
 .mess-item {
@@ -332,6 +338,7 @@ header hr {
     border-color: #473787;
     stroke: #473787;
     fill: #473787;
+    cursor: pointer;
 }
 
 .mess-icon {
@@ -1447,7 +1454,7 @@ textarea::placeholder {
 }
 
 .footer__bottom-li:hover,
-.footer__bottom a:hover {
+.footer__bottom-li a:hover {
     text-decoration: underline;
     font-family: 'Calibri-Bold';
     color: #dfdee5;
@@ -1539,7 +1546,8 @@ textarea::placeholder {
 
     .logo {
         /* padding: 140px 0 65px; */
-        padding: 120px 0 65px;
+        /* padding: 120px 0 65px; */
+        padding: 190px 0 65px;
     }
 
     .header__description {
@@ -1701,7 +1709,8 @@ textarea::placeholder {
 
     .logo {
         /* padding: 240px 0 65px; */
-        padding: 220px 0 65px;
+        /* padding: 220px 0 65px; */
+        padding: 290px 0 65px;
     }
 
     .header__description {
@@ -1853,6 +1862,10 @@ textarea::placeholder {
 
     .important .services__about-first__part {
         margin-right: 0;
+    }
+
+    .contacts_ornament-left {
+        bottom: -40px;
     }
 }
 
@@ -2026,7 +2039,8 @@ textarea::placeholder {
 
     .logo {
         /* padding-top: 85px; */
-        padding-top: 65px;
+        /* padding-top: 65px; */
+        padding-top: 135px;
     }
 
     .heading {
@@ -2115,6 +2129,13 @@ textarea::placeholder {
 }
 
 @media(max-width:854px) {
+    .header__top {
+        position: unset;
+        width: unset;
+        z-index: unset;
+        opacity: unset;
+    }
+
     header .mess {
         margin-right: calc(8vw + 46px);
     }
@@ -2460,128 +2481,6 @@ textarea::placeholder {
 }
 
 @media(max-width:768px) {
-    /* header .mess {
-        margin-right: calc(8vw + 46px);
-    }
-
-    .menu {
-        width: 100vw;
-        height: 100vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        background: #4b446a;
-        /* position: absolute; */
-        /*position: fixed;
-        top: 0;
-        right: -100vw;
-        z-index: 102;
-    }
-
-    .menu__list {
-        color: #fff;
-        z-index: 2;
-        height: 9vh;
-        font-size: 2em;
-        width: fit-content;
-    }
-
-    .menu__text {
-        position: unset;
-        padding-top: 2vh;
-    }
-
-    .menu__img-wrap {
-        height: 20px;
-    }
-
-    .menu__img {
-        border: 2px double #edecf1;
-        top: 0;
-        outline: 2px solid #fff;
-        outline-offset: 3px;
-    }
-
-    .menu__list:hover .menu__img::before {
-        display: none;
-    }
-
-    .menu__list:hover .menu__img {
-        position: relative;
-        background: #4b446a;
-        border: 3px solid #edecf1;
-        width: 22px;
-        height: 22px;
-        top: -6px;
-        outline: none;
-    }
-
-    .menu__check:checked ~ .menu{
-        right: 0 !important;
-        transition: right 1s;
-    }
-
-    .mess-menu_mobile {
-        display: flex;
-    }
-
-    .menu__mobile-bottom {
-        display: block;
-        width: 100vw;
-    }
-
-    .menu__mobile-bottom .footer__social-mobile {
-        padding: 2.5vh 5vw;
-    }
-
-    .menu__mobile-bottom .mess {
-        margin-right: 0;
-    }
-
-    .menu__mobile-bottom hr {
-        color: #fff;
-        height: 1px;
-        background-color: #fff;
-        position: unset;
-    }
-
-    .menu__icon-mobile {
-        display: block;
-        background: url(img/mobile/burger_no-active.png);
-        height: 24px;
-        width: 46px;
-        border: none;
-        position: fixed;
-        right: calc(8vw - 8px);
-        top: 26px;
-        background-color: #fcfcfc;
-        padding: 8px;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 10px;
-        opacity: 0.7;
-        z-index: 101;
-    }
-
-    .menu__icon-mobile:hover {
-        cursor: pointer;
-        background: url(img/mobile/burger_active.png);
-        background-color: #fcfcfc;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .menu__mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header__top .heading {
-        padding-bottom: 6px;
-
-    }  */
-
     .header__text {
         padding: 0;
         line-height: 42px;
@@ -2589,10 +2488,10 @@ textarea::placeholder {
         margin: 0 auto;
     }
 
-    .logo {
+    /* .logo { */
         /* padding-top: 105px; */
-        padding-top: 85px;
-    }
+        /* padding-top: 85px;
+    } */
 
     .services__container {
         top: -80px;
@@ -2794,6 +2693,10 @@ textarea::placeholder {
         bottom: 0;
     }
 
+    .contacts_ornament-left {
+        bottom: 0;
+    }
+
     .contacts__form {
         top: inherit;
         bottom: -5vh;
@@ -2861,13 +2764,7 @@ textarea::placeholder {
     }
 }
 
-@media (max-width: 768px) and (max-height: 960px){
-    .menu__list {
-        margin-top: -4vh;
-    }
-}
-
-@media (max-width: 768px) and (max-height: 800px){
+@media (max-width: 854px) and (max-height: 800px){
     .menu__list {
         font-size: 1.2em;
         height: 8vh;
@@ -2885,6 +2782,46 @@ textarea::placeholder {
 
     .menu__text {
         padding-top: 1vh;
+    }
+}
+
+@media (max-width: 854px) and (max-height: 580px){
+    .menu__mobile .heading {
+        padding-top: 1.5vh;
+    }
+
+    .menu__list {
+        font-size: 1.1em;
+        margin-top: -2vh;
+    }
+
+    .menu__text {
+        padding-top: 0.2vh;
+    }
+}
+
+@media (max-width: 854px) and (max-height: 520px){
+    .menu__list {
+        width: 130px;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .menu__list:hover {
+        position: relative;
+        left: -7px;
+    }
+
+    .menu__text {
+        padding-left: 3vw;
+        padding-top: 0;
+        padding-bottom: 1.4vh;
+    }
+}
+
+@media (max-width: 768px) and (max-height: 960px){
+    .menu__list {
+        margin-top: -4vh;
     }
 }
 
@@ -3025,7 +2962,7 @@ textarea::placeholder {
     }
 
     .ornament__right {
-        flex-shrink: 0.2;
+        flex-shrink: 0.1;
     }
 
     .services__container {
@@ -3115,6 +3052,10 @@ textarea::placeholder {
         bottom: 0;
         top: 0;   
     }
+
+    .contacts_ornament {
+        bottom: -40px;
+    }
 }
 
 @media(max-width:480px) {
@@ -3126,6 +3067,10 @@ textarea::placeholder {
         right: calc(4vw - 6px);
         top: 26px;  
         padding: 6px;
+    }
+
+    .logo {
+        padding-top: 85px;
     }
 
     .services img {
@@ -3253,6 +3198,10 @@ textarea::placeholder {
 
     .mess-icon {
         padding: 3px 10px 4px;
+    }
+
+    .logo {
+        padding: 60px 0 40px;
     }
 
     .header__description .heading{
@@ -3393,7 +3342,14 @@ textarea::placeholder {
     .contacts__form .close {
         top: 15px;
     }
-        
+
+    .contacts_ornament-left {
+        left: -20px;
+    }
+    
+    .contacts_ornament-right {
+        right: -20px;
+    }
 }
 
 @media(max-width:410px){
@@ -3657,6 +3613,14 @@ textarea::placeholder {
     .contacts__connect {
         font-size: 1.3em;
     }
+
+    .contacts_ornament-left {
+        left: -30px;
+    }
+    
+    .contacts_ornament-right {
+        right: -30px;
+    }
 }
 
 @media(max-width:240px){
@@ -3666,6 +3630,14 @@ textarea::placeholder {
 
     .structural__menu {
         top: -410px;
+    }
+
+    .contacts {
+        padding-bottom: 54px;
+    }
+
+    .contacts_ornament {
+        bottom: -46px;
     }
 }
 
