@@ -64,10 +64,17 @@ body {
     overflow-x: hidden;*/
     font-size: 16px;
     overflow: hidden;
+    /* HIDE GOOGLE SCRIPT EMPTY SPACE */
+    top: 0px !important;
 }
 
 a {
     text-decoration: none;
+}
+
+/* HIDE GOOGLE NAVBAR WITH LANGUAGE CHOICE */
+.skiptranslate {
+    display: none !important;
 }
 
 .page__wrap {
@@ -339,6 +346,18 @@ header hr {
     stroke: #473787;
     fill: #473787;
     cursor: pointer;
+}
+
+#eng__check-first:checked ~ .eng__top,
+#rus__check-first:checked ~ .rus__top {
+    color: #473787;
+    border-color: #473787;
+    stroke: #473787;
+    fill: #473787;
+}
+
+#eng__check-first, #rus__check-first, .eng__check, .rus__check{
+    display: none;
 }
 
 .mess-icon {
@@ -1416,12 +1435,21 @@ textarea::placeholder {
     color: #dfdee5;
     border-color: #dfdee5;
     border-width: 1px;
+    background: none;
 }
 
 .footer .mess-icon:hover,
 .footer .eng-rus:hover,
 .menu .mess-icon:hover,
 .menu .eng-rus:hover {
+    color: #635d7e;
+    stroke: #635d7e;
+    fill: #635d7e;
+    background-color: #fff;
+}
+
+.eng__check:checked ~ .eng-white,
+.rus__check:checked ~ .rus-white {
     color: #635d7e;
     stroke: #635d7e;
     fill: #635d7e;
@@ -2119,8 +2147,8 @@ textarea::placeholder {
         padding: 0 0 10px;
     }
 
-    .footer .eng-rus,
-    .menu .eng-rus {
+    .footer .selected__button-eng,
+    .menu .selected__button-eng {
         margin: 0;
     }
 
@@ -3476,9 +3504,9 @@ textarea::placeholder {
         right: -10px;
     }
 
-    .services__container {
+    /* .services__container {
         top: -80px;
-    }
+    } */
     
     .services .services__item-first, .services .services__item-last {
         margin: 0 -28vw;

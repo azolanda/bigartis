@@ -157,6 +157,7 @@ function get_cookie ( cookie_name ) {
 
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({
-      pageLanguage: 'ru'
+      // pageLanguage: 'en',
+      includedLanguages: 'en,ru'
     },'google_translate_element');
   };

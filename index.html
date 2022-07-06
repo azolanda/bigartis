@@ -7,19 +7,6 @@
 
   <title class="notranslate">BigArtis</title>
 
-  <style type="text/css">
-    body {
-      top: 0px !important;
-    }
-
-    /* Убираем отступ который выставляет скрипт */
-    .skiptranslate {
-      display: none !important;
-    }
-
-    /* Скрываем гугловский навбар с выбором языка */
-  </style>
-
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
@@ -34,8 +21,10 @@
           <hr>
           <div class="lang-mess container container_big-screen">
               <div class="lang">
-                <button onclick="doGTranslate('ru|en');" class="eng-rus"><span class="notranslate">ENG</span></button>
-                <button onclick="doGTranslate('en|ru');" class="eng-rus"><span class="notranslate">RUS</span></button>
+                <input id = "eng__check-first" class = "eng__check" type="checkbox">
+                <button onclick="doGTranslate('ru|en');" class="eng-rus selected__button-eng eng__top"><span class="notranslate">ENG</span></button>
+                <input id = "rus__check-first" class = "rus__check" type="checkbox">
+                <button onclick="doGTranslate('en|ru');" class="eng-rus selected__button-rus rus__top"><span class="notranslate">RUS</span></button>
               </div>
               <div class="mess-menu_mobile">
                 <div class="mess">
@@ -152,8 +141,10 @@
                 <hr>
                 <div class="footer__social-mobile">
                   <div class="lang footer_social footer__top-right__item">
-                    <button onclick="doGTranslate('ru|en');" class="eng-rus"><span class="notranslate">ENG</span></button>
-                    <button onclick="doGTranslate('en|ru');" class="eng-rus"><span class="notranslate">RUS</span></button>
+                    <input class = "eng__check" type="checkbox">
+                    <button onclick="doGTranslate('ru|en');" class="eng-rus selected__button-eng eng-white"><span class="notranslate">ENG</span></button>
+                    <input id = "rus__check-first" class = "rus__check" type="checkbox">
+                    <button onclick="doGTranslate('en|ru');" class="eng-rus selected__button-rus rus-white"><span class="notranslate">RUS</span></button>
                   </div>
                   <div class="mess footer_social footer__top-right__item">
                     <a href="https://wa.clck.bar/79117787133" class="mess-item mess-item-wa" target="_blank">
@@ -1043,8 +1034,10 @@
             </a>
           </div>
           <div class="lang footer_social footer__top-right__item">
-            <button onclick="doGTranslate('ru|en');" class="eng-rus"><span class="notranslate">ENG</span></button>
-            <button onclick="doGTranslate('en|ru');" class="eng-rus"><span class="notranslate">RUS</span></button>
+            <input class = "eng__check" type="checkbox">
+            <button onclick="doGTranslate('ru|en');" class="eng-rus selected__button-eng eng-white"><span class="notranslate">ENG</span></button>
+            <input id = "rus__check-first" class = "rus__check" type="checkbox">
+            <button onclick="doGTranslate('en|ru');" class="eng-rus selected__button-rus rus-white"><span class="notranslate">RUS</span></button>
           </div>
           </div>
           
@@ -1067,8 +1060,10 @@
           </ul>
           <div class="footer__social-mobile">
             <div class="lang footer_social footer__top-right__item">
-              <button onclick="doGTranslate('ru|en');" class="eng-rus"><span class="notranslate">ENG</span></button>
-              <button onclick="doGTranslate('en|ru');" class="eng-rus"><span class="notranslate">RUS</span></button>
+              <input class = "eng__check" type="checkbox">
+              <button onclick="doGTranslate('ru|en');" class="eng-rus selected__button-eng eng-white"><span class="notranslate">ENG</span></button>
+              <input id = "rus__check-first" class = "rus__check" type="checkbox">
+              <button onclick="doGTranslate('en|ru');" class="eng-rus selected__button-rus rus-white"><span class="notranslate">RUS</span></button>
             </div>
             <div class="mess footer_social footer__top-right__item">
               <a href="https://wa.clck.bar/79117787133" class="mess-item mess-item-wa" target="_blank">

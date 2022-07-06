@@ -1,3 +1,4 @@
+"use strict";
 $(document).ready(function () {
 
     $('.popup_link').magnificPopup({
@@ -154,6 +155,25 @@ $(document).ready(function () {
         let form = $('#contact__form');
         form[0].classList.remove('no-visible');
         e.preventDefault();
+    });
+
+    // ----- SELECTED LANG BUTTON -----
+    $('.selected__button-eng').on('click', function(e){
+        $('.eng__check').each(function (index, value){
+            value.checked = true;
+        });
+        $('.rus__check').each(function (index, value){
+            value.checked = false;
+        });
+    });
+
+    $('.selected__button-rus').on('click', function(e){
+        $('.eng__check').each(function (index, value){
+            value.checked = false;
+        });
+        $('.rus__check').each(function (index, value){
+            value.checked = true;
+        });
     });
 
     $('.menu__list').on('click', function(e){
