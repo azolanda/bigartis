@@ -396,6 +396,9 @@ header hr {
 .services__about-first__part,
 .services__about-second__part {
     display: flex;
+    /* --- */
+    justify-content: space-around;
+    flex-basis: 50%;
 }
 
 .services__item {
@@ -598,6 +601,7 @@ header hr {
     color: #9894aa;
     width: 45px;
     height: 45px;
+    animation: ani 1.7s forwards;
 }
 
 .slick-arrow:hover {
@@ -648,6 +652,7 @@ header hr {
 
 .item.slick-slide.slick-active {
     transform: scale(0.9) translate(-50px);
+    /* animation: ani 1s forwards; */
 }
 
 .item.slick-slide.slick-center {
@@ -818,12 +823,18 @@ header hr {
     font-family: 'CenturyGothic';
     font-size: 2em;
     text-align: center;
-    width: min-content;
-    padding-right: 10.5vw;
+    /* --- */
+    /* width: min-content;
+    padding-right: 10.5vw; */
+    max-width: 240px;
+    padding-right: 11vw;
+    flex-basis: 50%;
 }
 
 .services__about-second__part .facts__item:last-child{
-    padding-right: 0;
+    /* --- */
+    /* padding-right: 0; */
+    padding-right: 3vw;
 }
 
 .facts-bold_text {
@@ -1567,7 +1578,9 @@ textarea::placeholder {
     }
 
     .facts__item {
-        padding-right: 10.7vw;
+        /* --- */
+        /* padding-right: 10.7vw; */
+        padding-right: 11.7vw;
     }
 }
 
@@ -1715,6 +1728,10 @@ textarea::placeholder {
 }
 
 @media(min-width:2560px) {
+    .header__top {
+        height: 100px;
+    }
+
     header hr {
         top: 40px;
     }
@@ -1754,11 +1771,18 @@ textarea::placeholder {
     }
 
     .ornament {
-        top: 760px;
+        /* --- */
+        /* top: 760px; */
+        top: 740px;
     }
 
     .ornament__left {
         top: -40px;
+    }
+
+    .services {
+        outline: 3px solid #fff;
+        outline-offset: 5px;
     }
 
     .services__container {
@@ -1768,6 +1792,8 @@ textarea::placeholder {
     .services__item {
         padding: 4vw 3vw;
         min-width: 17vw;
+        outline: 3px solid #fff;
+        outline-offset: 5px;
     }
 
     .services__item img,
@@ -1777,6 +1803,10 @@ textarea::placeholder {
 
     .services__about {
         margin-right: 3vw;
+    }
+
+    .item.slick-slide {
+        height: 760px !important;
     }
 
     .about_us-column_left {
@@ -1854,7 +1884,10 @@ textarea::placeholder {
 
     .facts__item {
         padding-right: 9.6vw;
-        font-size: 1.9em;
+        /* --- */
+        /* font-size: 1.9em; */
+        font-size: 1.8em;
+        padding-right: 10vw;
     }
 
     .footer__text {
@@ -1932,6 +1965,7 @@ textarea::placeholder {
 
     .facts__item {
         padding-right: 7vw;
+        padding-right: 8vw;
     }
 
     .clients {
@@ -1955,7 +1989,7 @@ textarea::placeholder {
     }
 
     .structural__menu {
-        font-size: 0.85em;
+        font-size: 0.82em;
     }
 }
 
@@ -2026,7 +2060,9 @@ textarea::placeholder {
     }
 
     .facts__item {
-        font-size: 1.75em;
+        /* --- */
+        /* font-size: 1.75em; */
+        font-size: 1.7em;
     }
 
     .contacts__form {
@@ -2452,11 +2488,15 @@ textarea::placeholder {
     }
 
     .structural__menu {
-        font-size: 0.8em;
+        font-size: 0.78em;
     }
 
     .structural {
         margin-bottom: -10px;
+    }
+
+    .structural__menu-text {
+        margin: 0 2px;
     }
 
     .client_slider .slick-list {
@@ -2556,6 +2596,10 @@ textarea::placeholder {
         margin-right: 12.5vw;
     }
 
+    .services__about-second__part .facts__item:last-child{
+        padding-right: 0;
+    }
+
     .services__about {
         margin-right: 8vw;
     }
@@ -2623,7 +2667,9 @@ textarea::placeholder {
 
     .facts__item {
         font-size: 2.2em;
-        margin-right: 8vw;
+        /* --- */
+        /* margin-right: 8vw; */
+        margin-right: 11vw;
         padding-right: 0;
     }
 
