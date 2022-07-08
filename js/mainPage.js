@@ -40,12 +40,12 @@ $(document).ready(function () {
 
                 let arrow = $('.slick-arrow');
 
-                $('.item').on('mousedown', function (e) {
+                $('.item').on('mousedown touchstart', function (e) {
                     arrow.addClass('no-visible');
                     $('.slide__title').addClass('no-visible');
                 });
                 
-                $('.item').on('mouseup', function (e) {
+                $('.item').on('mouseup touchend', function (e) {
                     setTimeout(() => arrow.removeClass('no-visible'), 1300);
                     setTimeout(() => $('.slide__title').removeClass('no-visible'), 1200);
                     onAfterChangeSlide();
