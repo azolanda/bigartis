@@ -577,6 +577,10 @@ header hr {
     box-sizing: border-box;
 }
 
+.white-popup {
+    height: max-content;
+}
+
 .slider {
     position: relative;
     z-index: 200;
