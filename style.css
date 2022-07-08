@@ -536,6 +536,14 @@ header hr {
     padding-bottom: 3vh;
     opacity: 1;
     cursor: pointer;
+    /* WITHOUT HIGHLIGHT ONCLICK */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .preview__item:hover {
@@ -575,10 +583,6 @@ header hr {
     max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;
-}
-
-.white-popup {
-    height: max-content;
 }
 
 .slider {
