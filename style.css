@@ -1879,7 +1879,9 @@ textarea::placeholder {
     } */
     
     .slide__title {
-        bottom: calc(3.5rem/3);
+        /* --- */
+        /* bottom: calc(3.5rem/3); */
+        bottom: 1.6rem;
     }
 
     .facts__item {
@@ -3237,6 +3239,26 @@ textarea::placeholder {
         margin: 0 -14vw;
     }
     
+    .slider {
+        margin-top: 3.4rem;
+    }
+
+    .white-popup .close {
+        top: 1.2rem;
+    }
+
+    .arrow-prev svg, .arrow-next svg {
+        width: 28px;
+    }
+
+    .arrow-prev {
+        left: calc(11.5vw - 34px);
+    }
+
+    .arrow-next {
+        right: calc(11.5vw - 34px);
+    }
+    
     .client__arrow-next {
         right: 38px;
     }
@@ -3256,7 +3278,9 @@ textarea::placeholder {
 
     .structural__menu-list {
         font-size: 0.7em;
-        width: 90vw;
+        /* --- */
+        /* width: 90vw; */
+        width: 80vw;
     }
 
     .structural__menu-img {
@@ -3409,6 +3433,14 @@ textarea::placeholder {
         height: 2000px;
     }
 
+    /* .slider {
+        margin-top: 3.4rem;
+    } */
+
+    .item.slick-slide {
+        height: 50vw !important;
+    }
+
     .slide__title {
         width: 80vw;
         position: relative;
@@ -3433,6 +3465,10 @@ textarea::placeholder {
         width: 80vw;
     }
 
+    .read img {
+        height: 1.4rem;
+    }
+
     .about-poject {
         font-size: 1em;
     }
@@ -3445,16 +3481,16 @@ textarea::placeholder {
         width: 66vw !important;
     }
 
-    .arrow-prev svg, .arrow-next svg {
+    /* .arrow-prev svg, .arrow-next svg {
         width: 28px;
-    }
+    } */
 
     .arrow-prev {
-        left: calc(15.5vw - 28px);
+        left: calc(15.2vw - 28px);
     }
 
     .arrow-next {
-        right: calc(15.5vw - 28px);
+        right: calc(15.2vw - 28px);
     }
 
     .white-popup .close__icon {
@@ -3464,6 +3500,7 @@ textarea::placeholder {
     .white-popup .close {
         font-size: 1em;
         right: 17vw;
+        /* top: 1.2rem; */
     }
 
     .facts__item {
@@ -3828,13 +3865,21 @@ textarea::placeholder {
 
 @media (max-height: 480px){
     .item.slick-slide {
-        max-height: 52vh;
+        max-height: 58vh;
+    }
+
+    .white-popup .close {
+        top: 1.2rem;
+    }
+
+    .slider {
+        margin-top: 3.4rem;
     }
 }
 
 @media (max-height: 360px){
     .item.slick-slide {
-        max-height: 44vh;
+        max-height: 52vh;
     }
 }
 

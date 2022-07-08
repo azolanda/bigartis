@@ -1,22 +1,10 @@
 "use strict";
 $(document).ready(function () {
     
-    // let arrow = $('.slick-arrow');
-
     let slideIndex = 1;
 
     $('.popup_link').on('click', function (e) {
         slideIndex = parseInt($(this.parentNode).data('item'));
-        
-        // arrow.addClass('no-visible');
-        // setTimeout(() => arrow.removeClass('no-visible'), 1300);
-        
-        // $('.slider').slick('slickSetOption', {
-        //         initialSlide: slideIndex - 1,
-        // });
-
-        // $('.slider').slick('slickGoTo', slideIndex - 1);
-        // $('.slick-slider').slick('setPosition');
 
         $('.slide__title')[0].innerHTML = "Заголовок: " + $('.preview__item p')[slideIndex - 1].innerHTML;
 
