@@ -42,14 +42,14 @@ $(document).ready(function () {
 
                 $('.item, .slick-track').on('mousedown touchstart', function (e) {
                     arrow.addClass('no-visible');
-                    $('.slide__title').addClass('no-visible');
+                    $('.slide__title').addClass('no-visible-title');
                 });
 
 
                 
                 $('.item, .slick-track').on('mouseup touchend', function (e) {
                     setTimeout(() => arrow.removeClass('no-visible'), 1300);
-                    setTimeout(() => $('.slide__title').removeClass('no-visible'), 1200);
+                    setTimeout(() => $('.slide__title').removeClass('no-visible-title'), 1200);
                     onAfterChangeSlide();
                 });
                 
@@ -57,9 +57,9 @@ $(document).ready(function () {
                     arrow.addClass('no-visible');
                     setTimeout(() => arrow.removeClass('no-visible'), 1300);
                 
-                    $('.slide__title').addClass('no-visible');
+                    $('.slide__title').addClass('no-visible-title');
                 
-                    setTimeout(() => $('.slide__title').removeClass('no-visible'), 1200);
+                    setTimeout(() => $('.slide__title').removeClass('no-visible-title'), 1200);
                 
                     onAfterChangeSlide();
                 });

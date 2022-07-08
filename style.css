@@ -630,6 +630,10 @@ header hr {
     display: none !important;
 }
 
+.no-visible-title{
+    visibility: hidden;
+}
+
 .item.slick-slide {
     width: 800px;
     height: 350px !important;
