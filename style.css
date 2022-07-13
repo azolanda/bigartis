@@ -385,6 +385,11 @@ header hr, .projects hr {
     fill: #473787;
 }
 
+#services__label{
+    padding-top: 70px;
+    position: absolute;
+}
+
 .services {
     position: relative;
     outline: 2px solid #fff;
