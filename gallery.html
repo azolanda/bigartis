@@ -20,8 +20,11 @@
             <header>
                 
                 <div id = "header__site" class="header__top">
-                    <div class="header__logo-pages container">
-                        <img src="img/pages/logo__header-pages.png" alt="header__logo-pages">
+                    <div class="header__right">
+                        <div class="header__logo-pages container">
+                            <img src="img/pages/logo__header-pages.png" alt="header__logo-pages">
+                        </div>
+                        <h1 class = "heading__menu-type">СТУДИЯ ДИЗАЙНА ДЛЯ&nbsp;ВАШЕГО БИЗНЕСА&nbsp;И ДЛЯ&nbsp;ДУШИ</h1>
                     </div>
                     <div class="header__left-menu">    
                         <hr>
@@ -217,6 +220,7 @@
                             </div>
                         </nav>
                     </div>
+                    
                 </div>
                 <div id="google_translate_element"></div>
             </header>
@@ -238,13 +242,34 @@
                 <h1 class="heading">ПРОЕКТЫ</h1>
                 <hr>
                 <div id="filters" class="button-group">
-                    <button class="button is-checked" data-filter="*">ВСЕ</button>
-                    <button class="button" data-filter=".logos">ЛОГОТИПЫ</button>
-                    <button class="button" data-filter=".firm">ФИРМЕННЫЙ СТИЛЬ</button>
-                    <button class="button" data-filter=".poligr">ПОЛИГРАФИЯ</button>
-                    <button class="button" data-filter=".w_site">САЙТЫ</button>
-                    <button class="button" data-filter=".mass__media">МЕДИА-РЕКЛАМА</button>
-                    <button class="button" data-filter=".others">ДРУГОЕ</button>
+                    <div class = "menu__list">
+                        <button class="filter__button menu__img is-checked" data-filter="*"></button>
+                        <span class="filter__text menu__text text__checked">ВСЕ</span>
+                    </div>
+                    <div class = "menu__list">
+                        <button class="filter__button menu__img" data-filter=".logos"></button>
+                        <span class="filter__text menu__text">ЛОГОТИПЫ</span>
+                    </div>
+                    <div class = "menu__list">
+                        <button class="filter__button menu__img" data-filter=".firm"></button>
+                        <span class="filter__text menu__text">ФИРМЕННЫЙ СТИЛЬ</span>
+                    </div>
+                    <div class = "menu__list">
+                        <button class="filter__button menu__img" data-filter=".poligr"></button>
+                        <span class="filter__text menu__text">ПОЛИГРАФИЯ</span>
+                    </div>
+                    <div class = "menu__list">
+                        <button class="filter__button menu__img" data-filter=".w_site"></button>
+                        <span class="filter__text menu__text">САЙТЫ</span>
+                    </div>
+                    <div class = "menu__list">
+                        <button class="filter__button menu__img" data-filter=".mass__media"></button>
+                        <span class="filter__text menu__text">МЕДИА-РЕКЛАМА</span>
+                    </div>
+                    <div class = "menu__list">
+                        <button class="filter__button menu__img" data-filter=".others"></button>
+                        <span class="filter__text menu__text">ДРУГОЕ</span>
+                    </div>
                 </div>
 
                 <div class="grid preview container_big-screen">
@@ -359,6 +384,34 @@
                             class="preview__img"></a>
                         <a href="project_pages/project_16.html" target="_blank" class="preview__heading-link">
                         <p class="preview__heading">Логотип для компании Петролюкс16</p>
+                        </a>
+                    </div>
+                    <div class="element-item preview__item w_site" data-category="w_site"  data-item="17">
+                        <a href="#project__slider" class="popup_link"><img src="img/projects/photo-17.jpg" alt="project preview"
+                            class="preview__img"></a>
+                        <a href="project_pages/project_17.html" target="_blank" class="preview__heading-link">
+                        <p class="preview__heading">Логотип для компании Петролюкс17</p>
+                        </a>
+                    </div>
+                    <div class="element-item preview__item poligr" data-category="poligr"  data-item="18">
+                        <a href="#project__slider" class="popup_link"><img src="img/projects/photo-18.jpg" alt="project preview"
+                            class="preview__img"></a>
+                        <a href="project_pages/project_18.html" target="_blank" class="preview__heading-link">
+                        <p class="preview__heading">Логотип для компании Петролюкс18</p>
+                        </a>
+                    </div>
+                    <div class="element-item preview__item logos" data-category="logos"  data-item="19">
+                        <a href="#project__slider" class="popup_link"><img src="img/projects/photo-19.jpg" alt="project preview"
+                            class="preview__img"></a>
+                        <a href="project_pages/project_19.html" target="_blank" class="preview__heading-link">
+                        <p class="preview__heading">Логотип для компании Петролюкс19</p>
+                        </a>
+                    </div>
+                    <div class="element-item preview__item others" data-category="others"  data-item="20">
+                        <a href="#project__slider" class="popup_link"><img src="img/projects/photo-20.jpg" alt="project preview"
+                            class="preview__img"></a>
+                        <a href="project_pages/project_20.html" target="_blank" class="preview__heading-link">
+                        <p class="preview__heading">Логотип для компании Петролюкс20</p>
                         </a>
                     </div>
                 </div>
@@ -789,7 +842,9 @@
         var $buttonGroup = $( buttonGroup );
         $buttonGroup.on( 'click', 'button', function() {
             $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $buttonGroup.find('.filter__text').removeClass('text__checked');
             $( this ).addClass('is-checked');
+            this.nextElementSibling.classList.add('text__checked');
         });
         });
 

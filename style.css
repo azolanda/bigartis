@@ -2250,7 +2250,7 @@ textarea::placeholder {
         z-index: 102;
     }
 
-    .menu__list {
+    .menu .menu__list {
         color: #fff;
         z-index: 2;
         height: 9vh;
@@ -2267,7 +2267,7 @@ textarea::placeholder {
         height: 20px;
     }
 
-    .menu__img {
+    .menu .menu__img {
         /* --- */
         /* border: 2px double #edecf1; */
         top: 0;
@@ -2951,7 +2951,7 @@ textarea::placeholder {
 }
 
 @media (max-width: 768px) and (max-height: 960px){
-    .menu__list {
+    .menu .menu__list {
         margin-top: -4vh;
     }
 }
