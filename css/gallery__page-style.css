@@ -181,11 +181,27 @@ footer .footer_social-item {
 
 .button-group {
     /* margin-bottom: 20px; */
-    display: flex;
     width: 86%;
     margin-bottom: -20px;
     font-family: 'MyriadPro-Regular';
     font-size: 1em;
+    /* --- */
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-column-gap: 1%;
+}
+
+.button-group__first{
+    display: grid;
+    grid-template-columns: 19% 31% 31% 19%;
+}
+
+.button-group__second{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+
 }
 
 .button-group .menu__img:before{
@@ -214,6 +230,10 @@ footer .footer_social-item {
 .button-group .text__checked {
     top: -18px;
     font-weight: bold;
+}
+
+.filter__hr-second{
+    display: none;
 }
 
   /* ---- isotope ---- */
@@ -315,6 +335,11 @@ footer .footer_social-item {
     .header__logo-pages img{
         width: 76%;
     }
+
+    .button-group {
+        width: 98%;
+        margin-left: calc(50% - 40vw);
+    }
 } 
 
 @media (max-width: 1040px){
@@ -346,6 +371,11 @@ footer .footer_social-item {
 
     .button-group{
         font-size: 0.96em;
+        margin-left: calc(50% - 42vw);
+    }
+
+    .grid{
+        margin-top: -10px;
     }
 } 
 
@@ -378,6 +408,7 @@ footer .footer_social-item {
 
     .button-group{
         font-size: 0.84em;
+        margin-left: calc(50% - 44vw);
     }
 }
 
@@ -418,6 +449,10 @@ footer .footer_social-item {
         top: 25px;
     }
 
+    .menu__list:hover .menu__img{
+        top: -6px;
+    }
+
     .eng-rus {
         /* margin-right: 14px; */
         margin-right: 11px;
@@ -437,9 +472,9 @@ footer .footer_social-item {
         padding-right: 15px;
     }
 
-    .menu__img {
+    /* .menu__img {
         top: 0;
-    }
+    } */
 
     .header__top {
         flex-direction: column-reverse;
@@ -447,6 +482,44 @@ footer .footer_social-item {
 
     .breadcrumbs {
         padding-top: 64px;
+    }
+
+    .button-group .menu__list {
+        height: 94px;
+    }
+
+    .button-group {
+        margin-left: calc(50% - 46vw);
+    }
+
+    .grid {
+        margin-top: -24px;
+    }
+}
+
+@media(max-width:768px){
+    .button-group {
+        display: block;
+        margin-left: calc(50% - 42vw);
+        font-size: 1em;
+    }
+
+    .filter__hr-second{
+        display: block;
+        margin-left: calc(50% - 50vw);
+    }
+
+    .button-group__first {
+        grid-template-columns: 18% 28% 30% 30%;
+        justify-content: center;
+    }
+
+    .button-group__second {
+        grid-template-columns: 22% 22% 22%;
+    }
+
+    .button-group .menu__list {
+        width: 154px;
     }
 }
 
