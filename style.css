@@ -932,6 +932,10 @@ header hr, .projects hr {
     background-color: #fff;
 }
 
+.client_slider{
+    display:none;
+}
+
 .client_slider .slick-list {
     margin: 0px 18vw;
     padding: 0;
