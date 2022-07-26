@@ -950,7 +950,8 @@ footer .footer_social-item {
     }
 
     .button-group .menu__list {
-        width: 134px;
+        /* width: 134px; */
+        width: 130px;
     }
 }
 
