@@ -4,6 +4,10 @@ body {
     height: 100%;
 }
 
+.page__wrap {
+    overflow-x: hidden;
+}
+
 header{
     position: fixed;
 }
@@ -824,7 +828,8 @@ footer .footer_social-item {
     }
 
     .grid {
-        width: 88vw;
+        /* width: 88vw; */
+        width: calc(88vw + 2px);
     }
 
     .popup_link {
