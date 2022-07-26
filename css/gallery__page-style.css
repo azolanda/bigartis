@@ -172,7 +172,7 @@ header .mess{
 footer .footer_social-item {
     display: flex;
     align-items: center;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 .projects{
@@ -802,6 +802,19 @@ footer .footer_social-item {
 @media(max-width:767px){
     .heading__menu-type {
         font-size: 0.8em;
+    }
+
+    header hr {
+        left: -34vw;
+    }
+
+    .header__right {
+        grid-template-columns: 26% 64%;
+        /* padding-left: 8vw; */
+    }
+
+    .menu__icon-mobile {
+        right: calc(8vw - 10px);
     }
 }
 
