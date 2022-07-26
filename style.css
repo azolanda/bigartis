@@ -2877,7 +2877,7 @@ textarea::placeholder {
     }
     
     span.form__mobile-text{
-        display: inline;
+        display: inline !important;
     }
 
     textarea{
@@ -2896,7 +2896,9 @@ textarea::placeholder {
 
 @media (max-width: 854px) and (max-height: 800px){
     .menu__list {
-        font-size: 1.2em;
+        /* --- */
+        /* font-size: 1.2em; */
+        font-size: inherit !important;
         height: 8vh;
     }
 
@@ -2938,6 +2940,10 @@ textarea::placeholder {
         width: 130px;
         flex-direction: row;
         justify-content: flex-start;
+    }
+
+    .menu .menu__list{
+        width: 120px;
     }
 
     .menu__list:hover {
