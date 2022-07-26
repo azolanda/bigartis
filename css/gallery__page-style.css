@@ -813,9 +813,9 @@ footer .footer_social-item {
         /* padding-left: 8vw; */
     }
 
-    .menu__icon-mobile {
+    /* .menu__icon-mobile {
         right: calc(8vw - 10px);
-    }
+    } */
 }
 
 @media(max-width:640px){
