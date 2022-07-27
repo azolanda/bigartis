@@ -770,10 +770,19 @@ footer .footer_social-item {
         padding-left: 2vw;
     }
 
+    .contacts__form {
+        top: 0;
+    }
+
     .form__item {
         display: grid;
         grid-template-columns: 33% 65%;
         grid-column-gap: 2%;
+    }
+
+    .contacts__form input, textarea {
+        padding: 0 8px;
+        box-sizing: border-box;
     }
 }
 
