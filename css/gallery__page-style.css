@@ -46,6 +46,16 @@ header hr{
     grid-column-gap: 4%;
 }
 
+.header__logo-pages{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 /* header hr {
     top: 45px;
 } */
