@@ -776,8 +776,8 @@ footer .footer_social-item {
 
     .form__item {
         display: grid;
-        grid-template-columns: 33% 65%;
-        grid-column-gap: 2%;
+        grid-template-columns: 33% 66%;
+        grid-column-gap: 1%;
     }
 
     .contacts__form input, textarea {
