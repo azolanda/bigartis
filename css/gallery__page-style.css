@@ -441,6 +441,16 @@ footer .footer_social-item {
     }
 }
 
+@media (min-width: 1330px) and (max-width: 1919px){
+    .mini-input-left {
+        flex-basis: 54% !important;
+    }
+
+    /* .form__item .about_us-text {
+        padding-right: 0;
+    } */
+}
+
 /* @media (min-width: 855px) and (max-width: 1365px){
     .preview__img { */
         /* width: 19.24vw;*/
