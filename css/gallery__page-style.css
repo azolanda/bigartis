@@ -445,10 +445,6 @@ footer .footer_social-item {
     .mini-input-left {
         flex-basis: 54% !important;
     }
-
-    /* .form__item .about_us-text {
-        padding-right: 0;
-    } */
 }
 
 /* @media (min-width: 855px) and (max-width: 1365px){
@@ -776,7 +772,7 @@ footer .footer_social-item {
 
     .form__item {
         display: grid;
-        grid-template-columns: 38% 60%;
+        grid-template-columns: 33% 65%;
         grid-column-gap: 2%;
     }
 }
@@ -831,6 +827,10 @@ footer .footer_social-item {
     .form__item .about_us-text {
         display: flex;
         justify-content: flex-start;
+    }
+
+    .form__item {
+        grid-template-columns: 38% 60%;
     }
 
     /* span.form__mobile-text {
