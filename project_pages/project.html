@@ -7,6 +7,7 @@
     
     <title class="notranslate">BigArtis</title>
 
+    <link rel="stylesheet" href="../css/magnific-popup.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../css/gallery__page-style.css">
     <link rel="stylesheet" href="../css/project_type-page.css">
@@ -270,14 +271,18 @@
                             </p>
                         </div>
                         
-                        <div class="project__item-img">
-                            <img src="../img/projects/photo-1.jpg" alt="project__item-image">
+                        <div class="project__item-img white-popup">
+                            <a class="project__img-big" href="../img/projects/photo-1.jpg">
+                                <img src="../img/projects/photo-1.jpg" alt="project__item-image">
+                            </a>
                             <p class="preview__heading project__text-mini">Логотип для компании Петролюкс</p>
                         </div>
                     </div>
                     <div class="project__content-item">
-                        <div class="project__item-img">
-                            <img src="../img/projects/photo-1.jpg" alt="project__item-image">
+                        <div class="project__item-img white-popup">
+                            <a class="project__img-big" href="../img/projects/photo-1.jpg">
+                                <img src="../img/projects/photo-1.jpg" alt="project__item-image">
+                            </a>
                             <p class="preview__heading project__text-mini">Логотип для компании Петролюкс</p>
                         </div>
                         <div class="project__content-text">
@@ -299,18 +304,24 @@
                             </p>
                         </div>
                         
-                        <div class="project__item-img">
-                            <img src="../img/projects/photo-1.jpg" alt="project__item-image">
+                        <div class="project__item-img white-popup">
+                            <a class="project__img-big" href="../img/projects/photo-1.jpg">
+                                <img src="../img/projects/photo-1.jpg" alt="project__item-image">
+                            </a>
                             <p class="preview__heading project__text-mini">Логотип для компании Петролюкс</p>
                         </div>
                     </div>
                     <div class="project__content-imgs">
-                        <div class="project__item-img project__imgs-left">
-                            <img src="../img/projects/photo-1.jpg" alt="project__item-image">
+                        <div class="project__item-img project__imgs-left white-popup">
+                            <a class="project__img-big" href="../img/projects/photo-1.jpg">
+                                <img src="../img/projects/photo-1.jpg" alt="project__item-image">
+                            </a>
                             <p class="preview__heading project__text-mini">Логотип для компании Петролюкс</p>
                         </div>
                         <div class="project__item-img">
-                            <img src="../img/projects/photo-1.jpg" alt="project__item-image">
+                            <a class="project__img-big" href="../img/projects/photo-1.jpg">
+                                <img src="../img/projects/photo-1.jpg" alt="project__item-image">
+                            </a>
                             <p class="preview__heading project__text-mini">Логотип для компании Петролюкс</p>
                         </div>
                     </div>                   
@@ -715,13 +726,26 @@
     <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/translate.js"></script>
     <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../js/magnific-popup.js"></script>
     <script src="../slick/slick.min.js"></script>
     <script src="../js/RobinHerbots-Inputmask-c807c50/dist/jquery.inputmask.min.js"></script>
     <script src="../js/RobinHerbots-Inputmask-c807c50/dist/inputmask.js"></script>
     <script src="../js/form.js"></script>
     <script src="../js/mainPage.js"></script>
     <script>
+        $(document).ready(function() {
 
+            $('.project__item-img').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: true,
+                mainClass: 'mfp-img-mobile',
+                image: {
+                    verticalFit: true
+                }
+            });
+
+        });
     </script>
 </body>
 </html>
