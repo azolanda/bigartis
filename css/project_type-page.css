@@ -1,0 +1,126 @@
+.projects {
+    align-items: unset;
+    padding-bottom: 4.5rem;
+}
+
+.projects .heading {
+    padding-bottom: 1rem;
+}
+
+.mini__heading-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slick-arrow {
+    position: static;
+    margin-top: -1rem;
+    font-family: 'Calibri-Regular';
+    font-size: 1.1em;
+    display: grid;
+    grid-template-columns: auto auto;
+    line-height: 20px;
+}
+
+.slick-arrow svg{
+    width: 45px;
+}
+
+.arrow-prev svg{
+    padding-right: 1rem;
+}
+
+.arrow-next svg{
+    padding-left: 1rem;
+}
+
+.arrow-next{
+    justify-content: flex-end;
+}
+
+.slick-arrow:hover {
+    text-decoration: underline;
+}
+
+.heading__mini{
+    padding: 0;
+    font-size: 1.4em;
+}
+
+.projects .heading__mini{
+    padding-bottom: 3rem;
+}
+
+.about_us-text {
+    padding: 0 0 3rem;
+}
+
+.project__content{
+    padding-bottom: 3rem;
+}
+
+.project__content-item{
+    display: flex;
+    /* justify-content: space-between; */
+    /* column-count: 2; */
+    column-gap: 3rem;
+    /* column-width:50%; */
+    padding-bottom: 2.5rem;
+}
+
+.project__content-text{
+    flex-basis: 100%;
+}
+
+.project__item-img{
+    width:100%;
+    /* text-align: right; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.project__content-item:nth-child(2n) .project__item-img{
+    /* text-align: left; */
+    align-items: flex-start;
+}
+
+.project__item-img img{
+    width: 94%;
+}
+
+.project__text-mini{
+    align-self: center;
+    padding-top: 1rem;
+    padding-left: 6%;
+}
+
+.project__content-item:nth-child(2n) .project__text-mini{
+    padding-left: 0;
+    padding-right: 6%;
+}
+
+.project__content-imgs{
+    display: flex;
+    column-gap: 3rem;
+    padding-bottom: 2.5rem;
+}
+
+.project__content-imgs .project__item-img:nth-child(odd){
+    align-items: flex-start;
+}
+
+.project__imgs-left .project__text-mini{
+    padding-left: 0;
+    padding-right: 6%;
+}
+
+.project__button {
+    background: #fff;
+    padding: 7px 33px;
+}
+
+.mini__bottom-nav .slick-arrow {
+    margin-top: 0;
+}
+
