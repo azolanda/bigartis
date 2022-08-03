@@ -1509,7 +1509,9 @@ textarea::placeholder {
 }
 
 .footer__bottom {
-    padding-bottom: 45px;
+    /* --- */
+    /* padding-bottom: 45px; */
+    padding-bottom: 5.5vh;
 }
 
 .footer__bottom ul {
