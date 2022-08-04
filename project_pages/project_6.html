@@ -732,43 +732,7 @@
     <script src="../js/RobinHerbots-Inputmask-c807c50/dist/inputmask.js"></script>
     <script src="../js/form.js"></script>
     <script src="../js/mainPage.js"></script>
+    <script src="../js/project-popup.js"></script>
     <script src="../js/switchPrevNextPages.js"></script>
-    <script>
-        $(document).ready(function() {
-
-            $('.project__item-img').magnificPopup({
-                delegate: 'a',
-                type: 'image',
-                closeOnContentClick: true,
-                mainClass: 'mfp-img-mobile',
-                image: {
-                    verticalFit: true
-                }
-            });
-
-        });
-
-        let href = partOfHref().href;
-        let pageNum = partOfHref().pageNum;
-        let fileName = partOfHref().fileName;
-        let fileNameNew = partOfHref().fileNameNew;
-
-        $('.arrow-prev').on('click', function(e){
-            pageNum--;
-            if(pageNum === 0) pageNum = 24;
-            fileNameNew+= '_' + pageNum + fileName;
-            href+= '/' + fileNameNew;
-            window.location.replace(href);
-        });
-
-        $('.arrow-next').on('click', function(e){
-            pageNum++;
-            if(pageNum === 25) pageNum = 0;
-            fileNameNew+= '_' + pageNum + fileName;
-            href+= '/' + fileNameNew;
-            window.location.replace(href);
-        });
-
-    </script>
 </body>
 </html>
