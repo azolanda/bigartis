@@ -61,7 +61,6 @@
 
 .project__content-item{
     display: flex;
-    /* justify-content: space-between; */
     /* column-count: 2; */
     column-gap: 3rem;
     /* column-width:50%; */
@@ -150,15 +149,6 @@
     margin-top: 0;
 }
 
-.white-popup {
-    position: relative;
-    background: #FFF;
-    /* padding: 20px; */
-    /* width: auto; */
-    /* max-width: 500px; */
-    /* margin: 20px auto; */
-}
-
 .mfp-figure .mfp-close{
     color: #9692a9;
 }
@@ -198,10 +188,6 @@
 }
 
 @media(min-width: 1700px){
-    /* .about_us-text {
-        font-size: 1.2em;
-    } */
-
     .project__item-img img {
         width: 88%;
     }
