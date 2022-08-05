@@ -158,6 +158,10 @@
     cursor: pointer;
 }
 
+.white-popup {
+    background: #fff;
+}
+
 @media(min-width: 1600px){
     .project__item-img img {
         /* width: 86%; */

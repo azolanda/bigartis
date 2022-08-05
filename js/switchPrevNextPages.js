@@ -35,7 +35,8 @@ function partOfHref(){
             pageNum+= temp[k];
     }
 
-    fileName = temp.slice(k);
+    // fileName = temp.slice(k);
+    fileName = ".html";
     pageNum = parseInt(pageNum); 
     return {href: href, pageNum: pageNum, fileName: fileName, fileNameNew: fileNameNew};
 }
@@ -52,7 +53,9 @@ $('.arrow-prev').on('click', function(e){
     if(pageNum === 0) pageNum = 24;
     fileNameNew+= '_' + pageNum + fileName;
     href+= '/' + fileNameNew;
-    window.location.replace(href);
+    // window.history.pushState( {}, '', href);
+    // window.location.replace(href);
+    location.href = href;
 });
 
 $('.arrow-next').on('click', function(e){
@@ -60,5 +63,7 @@ $('.arrow-next').on('click', function(e){
     if(pageNum === 25) pageNum = 1;
     fileNameNew+= '_' + pageNum + fileName;
     href+= '/' + fileNameNew;
-    window.location.replace(href);
+    // window.history.pushState( {}, '', href);
+    // window.location.replace(href);
+    location.href = href;
 });
