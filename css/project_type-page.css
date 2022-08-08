@@ -3,6 +3,10 @@
     padding-bottom: 4.5rem;
 }
 
+.projects--userAgreement{
+    padding-bottom: 3.5rem;
+}
+
 .projects .heading {
     padding-bottom: 1rem;
 }
@@ -47,6 +51,14 @@
     font-size: 1.4em;
 }
 
+.projects .heading__micro{
+    font-family: 'Calibri-Bold';
+    font-size: 1.1em;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    line-height: 24px;
+}
+
 .projects .heading__mini{
     padding-bottom: 3rem;
 }
@@ -55,8 +67,17 @@
     padding: 0 0 3rem;
 }
 
+.about_us-text--userAgreement{
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+
 .project__content{
     padding-bottom: 3rem;
+}
+
+.project__content--userAgreement{
+    padding-bottom: 2rem;
 }
 
 .project__content-item{
@@ -65,6 +86,10 @@
     column-gap: 3rem;
     /* column-width:50%; */
     padding-bottom: 2rem;
+}
+
+.project__content-item--userAgreement{
+    padding-bottom: 0 !important;
 }
 
 .project__content-text{
@@ -140,6 +165,11 @@
     padding-right: 6%;
 }
 
+.userAgreement__anchor{
+    text-decoration: underline;
+    color: #473787;
+}
+
 .project__button {
     background: #fff;
     padding: 7px 33px;
@@ -160,6 +190,47 @@
 
 .white-popup {
     background: #fff;
+}
+
+.userAgreement__thanks{
+    width: 200px;
+    text-align: right; 
+    /* margin: 0 0 0 auto; */
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+.project__content-item--userAgreement ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    color:  #4b446a;
+}
+
+.userAgreement__list{
+    padding-bottom: 0 !important;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.userAgreement__list a:visited{
+    color:  #4b446a;
+}
+
+.userAgreement__list:not(.userAgreement__list:last-child){
+    padding-right: 1rem;
+}
+
+.userAgreement__list:not(.userAgreement__list:first-child){
+    border-left: 1px solid #4b446a;
+    padding-left: 1rem;
+}
+
+.userAgreement__list:hover{
+    font-family: "Calibri-Bold";
+    color: #473787;
+    /* text-decoration: underline; */
+    /* padding-right: calc(1rem - 5px) !important; */
 }
 
 @media(min-width: 1600px){
@@ -188,6 +259,10 @@
 
     .about_us-text {
         font-size: 1.2em;
+    }
+
+    .userAgreement__thanks {
+        width: 234px;
     }
 }
 
@@ -253,8 +328,14 @@
     .about_us-text {
         padding-bottom: 1.5rem;
     }
+
     .project__content-item {
         column-gap: 1rem;
+    }
+
+    .userAgreement__thanks{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem !important;
     }
 }
 
@@ -265,6 +346,10 @@
 
     .project__content {
         padding-bottom: 2rem;
+    }
+
+    .about_us-text--userAgreement{
+        font-size: 1.1em;
     }
 }
 
@@ -315,11 +400,31 @@
     .projects .heading {
         padding-bottom: 2.5rem;
     }
+
+    .projects .heading--userAgreement{
+        padding-bottom: 1rem;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .projects .heading__micro{
+        padding-bottom: 1.5rem !important;
+    }
+
+    .about_us-text--userAgreement{
+        padding-bottom: 0.7rem;
+    }
 }
 
 @media(max-width:640px) {
     .projects .heading {
         padding-bottom: 2.3rem;
+    }
+
+    .projects .heading--userAgreement {
+        width: min-content;
+        margin: 0 auto;
+        padding-bottom: 1rem;
     }
 }
 
@@ -406,6 +511,10 @@
     .projects.container {
         padding-bottom: 1.5rem;
     }
+
+    .heading__mini{
+        line-height: 35px;
+    }
 }
 
 @media(max-width:380px) {
@@ -428,6 +537,10 @@
     .about_us-text {
         padding-bottom: 1.3rem;
     }
+
+    .about_us-text--userAgreement{
+        padding-bottom: 1em;
+    }
 }
 
 @media(max-width:359px) {
@@ -449,6 +562,16 @@
 
     .arrow-prev, .arrow-next {
         margin-top: -3.1rem;
+    }
+
+    .userAgreement__thanks {
+        padding-top: 1rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .projects .heading--userAgreement{
+        font-size: 1.5em;
     }
 }
 
@@ -484,5 +607,13 @@
 
     .arrow-prev, .arrow-next {
         margin-top: -2.6rem;
+    }
+
+    .projects .heading--userAgreement {
+        font-size: 1.2em;
+    }
+
+    .heading__mini{
+        line-height: 28px;
     }
 }
