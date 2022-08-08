@@ -213,6 +213,10 @@
     text-underline-offset: 5px;
 }
 
+.userAgreement__list a{
+    color:  #4b446a;
+}
+
 .userAgreement__list a:visited{
     color:  #4b446a;
 }
