@@ -48,22 +48,22 @@ let pageNum = objPartOfHref.pageNum;
 let fileName = objPartOfHref.fileName;
 let fileNameNew = objPartOfHref.fileNameNew;
 
-$('.arrow-prev').on('click', function(e){
+function prevPage(maxNumber){
     pageNum--;
-    if(pageNum === 0) pageNum = 24;
+    if(pageNum === 0) pageNum = maxNumber;
     fileNameNew+= '_' + pageNum + fileName;
     href+= '/' + fileNameNew;
     // window.history.pushState( {}, '', href);
     // window.location.replace(href);
     location.href = href;
-});
+}
 
-$('.arrow-next').on('click', function(e){
+function nextPage(maxValue){
     pageNum++;
-    if(pageNum === 25) pageNum = 1;
+    if(pageNum === maxValue) pageNum = 1;
     fileNameNew+= '_' + pageNum + fileName;
     href+= '/' + fileNameNew;
     // window.history.pushState( {}, '', href);
     // window.location.replace(href);
     location.href = href;
-});
+}

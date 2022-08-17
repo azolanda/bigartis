@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,11 +13,9 @@
     <link rel="stylesheet" href="../css/project_type-page.css">
 </head>
 <body>
-
     <div class = "page__wrap">
         <div class = "content">
             <header>
-                
                 <div id = "header__site" class="header__top">
                     <div class="header__right container container_big-screen">
                         <div class="header__logo-pages">
@@ -735,5 +733,16 @@
     <script src="../js/mainPage.js"></script>
     <script src="../js/project-popup.js"></script>
     <script src="../js/switchPrevNextPages.js"></script>
+    <script>
+        'use strict';
+
+        $('.arrow-prev').on('click', function(e){
+            prevPage(24);
+        });
+
+        $('.arrow-next').on('click', function(e){
+            nextPage(25);
+        });
+    </script>
 </body>
 </html>
