@@ -593,6 +593,7 @@ header hr, .projects hr {
     max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;
+    top: 15%;
 }
 
 .slider {
@@ -1017,7 +1018,9 @@ header hr, .projects hr {
     width: 1070px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 8vw 28px;
+    /* --- */
+    /* padding: 0 8vw 28px; */
+    padding: 0 92px 28px;
     position: absolute;
     top: 23px;
     left: calc((100vw - 1070px - 16px) / 2);
@@ -1068,7 +1071,8 @@ header hr, .projects hr {
 textarea {
     border: none;
     border-bottom: 1px solid #9894aa;
-    flex-basis: 65%;
+    /* flex-basis: 65%; */
+    flex-basis: 62%;
     padding: 0 13px;
     font-family: 'Calibri-Light';
     font-size: 1em;
@@ -1102,7 +1106,9 @@ textarea::placeholder {
 }
 
 .mini-input-left {
-    flex-basis: 65% !important;
+    /* --- */
+    /* flex-basis: 65% !important; */
+    flex-basis: 58% !important;
 }
 
 .contacts__form input:focus,
@@ -1737,7 +1743,12 @@ textarea::placeholder {
         width: 1300px;
         /* left: calc((100vw - 1200px - 18px) / 2); */
         left: calc((100vw - 1300px - 10px) / 2);
-        padding: 0 6vw 38px;
+        /* padding: 0 6vw 38px; */
+        padding: 0 5.2vw 38px;
+    }
+
+    .mini-container_input {
+        flex-basis: 64.4%;
     }
 
     .contacts__button {
@@ -2110,7 +2121,9 @@ textarea::placeholder {
     .contacts__form {
         width: 100%;
         left: 0;
-        padding: 0 2.8vw 36px;
+        /* --- */
+        /* padding: 0 2.8vw 36px; */
+        padding: 0 6% 36px;
     }
 
     .contacts__item {
@@ -2181,6 +2194,11 @@ textarea::placeholder {
     .facts__item {
         padding-right: 6.5vw;
         font-size: 1.6em;
+    }
+
+    .contacts__form {
+        padding-left: 3%;
+        padding-right: 3%;
     }
 
     .footer__top {
@@ -2589,6 +2607,17 @@ textarea::placeholder {
         display: block;
     }
 
+    .form__item {
+        display: grid;
+        grid-template-columns: 33% 66%;
+        grid-column-gap: 1%;
+    }
+
+    .contacts__form input, textarea {
+        padding: 0 8px;
+        box-sizing: border-box;
+    }
+
     .form__item .about_us-text {
         font-size: 0.95em;
         padding: 0 5px 0 0;
@@ -2855,6 +2884,10 @@ textarea::placeholder {
         font-size: 1.2em;
     }
 
+    .form__item {
+        grid-template-columns: 38% 60%;
+    }
+
     .form__bottom {
         justify-content: space-between;
         padding-top: 40px;
@@ -3119,6 +3152,10 @@ textarea::placeholder {
         /* margin-left: calc(4vw - 4px); */
         margin-left: calc(4.5vw - 4px);
     }
+
+    .wrap {
+        top: 21%;
+    }
     
     .client__arrow-next {
         right: calc(0.5vw + 38px);
@@ -3143,6 +3180,10 @@ textarea::placeholder {
     .contacts__form {
         /* bottom: -7vh; */
         bottom: 0;
+    }
+
+    .form__item {
+        grid-template-columns: 43% 55%;
     }
 }
 
@@ -3232,6 +3273,10 @@ textarea::placeholder {
 
     .contacts__form .heading {
         font-size: 1.1em;
+    }
+
+    .form__item {
+        display: flex;
     }
 
     .form__bottom {
@@ -3564,6 +3609,10 @@ textarea::placeholder {
         font-size: 1.6em;
     }
 
+    .wrap {
+        top: 12%;
+    }
+
     .clients {
         height: 160px;
     }
@@ -3884,9 +3933,20 @@ textarea::placeholder {
     .structural__menu-num {
         height: 70%;
     }
+    .client__arrow-prev {
+        left: 20px;
+    }
+
+    .client__arrow-next {
+        right: 20px;
+    }
 
     .important__text-width {
         font-size: 1.1em;
+    }
+
+    .form__item .about_us-text {
+        font-size: 0.98em;
     }
 
     .contacts__connect {
